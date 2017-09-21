@@ -30,6 +30,9 @@
   
   npm install -g angular-cli
   
+  Deixar rodando o Back-End (https://github.com/wellingtonalvesdasilva/projeto-cadastro-cliente-em-asp-net-web-api) nesse endereço
+  http://localhost:12856
+  
   Após isso rodar a aplicação(apontar para o diretorio onde foi clonado)
   
   ng serve
