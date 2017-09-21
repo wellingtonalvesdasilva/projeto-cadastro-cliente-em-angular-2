@@ -17,7 +17,7 @@
 		shared:
 			model: modelos retornados pela API e utilizados pelos componentes
 			service: serviços responsáveis por realizar as resquisições as API
-      pipe: pipes criadas para transformar objetos. Ex: máscara do telefone edo cnpj
+			pipe: pipes criadas para transformar objetos. Ex: máscara do telefone e do cnpj e cpf
       
       
 ## Para rodar a aplicação
