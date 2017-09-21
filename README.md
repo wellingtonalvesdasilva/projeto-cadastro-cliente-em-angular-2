@@ -12,7 +12,7 @@
 		cliente: componente do cliente para a index e para o formulário
 		dashboard: componente do dashboard
 		footer: componente do rodapé
-    header: componente do cabeçalho   
+    		header: componente do cabeçalho   
 		
 		shared:
 			model: modelos retornados pela API e utilizados pelos componentes
