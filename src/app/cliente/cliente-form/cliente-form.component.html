@@ -1,0 +1,49 @@
+<div class="container" *ngIf="cliente">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-horizontal">
+                <fieldset>
+                    <legend>Cadastro de Cliente</legend>
+                    <div class="form-group col-md-12">
+                        <label class="col-md-3 control-label">Código</label>
+                        <div class="col-md-3">
+                            <input [(ngModel)]="cliente.codigo" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label class="col-md-3 control-label">Nome do Cliente</label>
+                        <div class="col-md-8">
+                            <input [(ngModel)]="cliente.nome" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label class="col-md-3 control-label">CPF/CNPJ</label>
+                        <div class="col-md-2">
+                            <input [(ngModel)]="cliente.cpF_CNPJ" class="form-control" maxLength="14" />
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label class="col-md-3 control-label">Telefone</label>
+                        <div class="col-md-2">
+                            <input [(ngModel)]="cliente.telefone" class="form-control" maxLength="11"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="btn-save"></label>
+                        <div class="col-md-4">
+                            <button class="btn btn-default-btn-xs btn-danger" (click)="goBack()">
+                                <i class="fa fa-arrow-left"></i>
+                                Cancelar
+                            </button>
+                            <button class="btn btn-default-btn-xs btn-success" (click)="save()">
+                                <i class="fa fa-save"></i>
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="error" *ngIf="error">{{error}}</div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>

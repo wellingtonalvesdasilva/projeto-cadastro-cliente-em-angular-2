@@ -22,15 +22,15 @@
       
 ## Para rodar a aplicação
 
-  Instalar o node js https://nodejs.org/en/
+  Instalar o [node js](https://nodejs.org/en/)
   
-  Instalar o npm  https://www.npmjs.com/
+  Instalar o [npm](https://www.npmjs.com/)
   
   Após isso instalar o angular cli
   
   npm install -g angular-cli
   
-  Deixar rodando o Back-End (https://github.com/wellingtonalvesdasilva/projeto-cadastro-cliente-em-asp-net-web-api) nesse endereço
+  Deixar rodando o [Back-End](https://github.com/wellingtonalvesdasilva/projeto-cadastro-cliente-em-asp-net-web-api) nesse endereço
   http://localhost:12856
   
   Após isso rodar a aplicação(apontar para o diretorio onde foi clonado)

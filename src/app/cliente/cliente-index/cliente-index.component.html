@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-horizontal">
+                <fieldset>
+                    <legend>Cadastro de Cliente(s) - Pesquisa</legend>
+                    <div class="form-group col-md-12">
+                        <label class="col-md-2 control-label">Nome</label>
+                        <div class="col-md-8">
+                            <input #searchBox id="search-box" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="btn-save"></label>
+                        <div class="col-md-4">
+                            <button  type="button" class="btn btn-primary" (click)="search(searchBox.value)">
+                                <i class="fa fa-search"></i>
+                                Pesquisar
+                            </button >
+                            <button  type="button" class="btn btn-success" (click)="add()">
+                                <i class="fa fa-plus"></i>
+                                Novo cliente
+                            </button >
+                        </div>
+                    </div>
+                    <div class="error" *ngIf="error">{{error}}</div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>-</th>
+                    <th>-</th>
+                    <th>Código</th>
+                    <th>Nome do Cliente</th>
+                    <th>CPF/CNPJ</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clientes">
+                    <th>
+                        <button type="button" class="btn btn-danger" (click)="remove(cliente, $event)">
+                            <span class="fa fa-remove"></span>
+                        </button>
+                    </th>
+                    <th>
+                        <button type="button" class="btn btn-info" (click)="edit(cliente)">
+                            <span class="fa fa-edit"></span>
+                        </button>
+                    </th>
+                    <th>{{cliente.codigo}}</th>
+                    <th>{{cliente.nome}}</th>
+                    <th>{{cliente.cpF_CNPJ | cnpjoucpf}}</th>
+                    <th>{{cliente.telefone | telefone}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
