@@ -1,6 +1,6 @@
 # Projeto de Cadastro de Cliente utilizando Angular 2
 
-**IDE**
+**IDE/Ferramentas**
 * Visual Studio Code
 * Node JS
 * Angular CLI
@@ -23,8 +23,6 @@
 ## Para rodar a aplicação
 
   Instalar o [node js](https://nodejs.org/en/)
-  
-  Instalar o [npm](https://www.npmjs.com/)
   
   Após isso instalar o angular cli
   
