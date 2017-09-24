@@ -33,6 +33,8 @@
   
   Após isso rodar a aplicação(apontar para o diretorio onde foi clonado)
   
+  npm link
+  
   ng serve
   
   
